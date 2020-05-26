@@ -11,6 +11,10 @@ class App extends React.Component{
     selectedVideo:null
   }
 
+  componentDidMount() {
+    this.getYoutubeVideos('Buildings')
+  }
+
 
   getYoutubeVideos = async (term) => { 
    
